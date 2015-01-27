@@ -8,9 +8,12 @@
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
+.education-entry, .work-entry, .language-entry {
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 0.5%;
+  padding-bottom: 2.5%;
+  display:block;
 }
 
 h1 {
@@ -50,11 +53,13 @@ h2, h3, h4, h5 {
 
 
 .date-text {
-  font-style: italic;
+  font-style:normal;
   font-size: 14px;
   color: #999999;
   line-height: 16px;
   float: left;
+  display: block;
+
 }
 
 .location-text {
@@ -124,8 +129,17 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.flex-box1 {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+
 }
 
 .center-content {
@@ -141,10 +155,12 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
-  width: 200px;
+  padding: 30px;
+  width: 360px; 
+  height:250px; 
   display: none;
-}
+  transform: rotate(-90deg); 
+}  
 
 img {
   padding: 10px;
